@@ -15,7 +15,7 @@ exports.saveToDb = (req,res,next) => {
 
     crypto.save().then(result => {
         res.json({
-            message: 'Saved to db',
+            message: 'Saved to database',
             crypto: crypto
         })
     })
