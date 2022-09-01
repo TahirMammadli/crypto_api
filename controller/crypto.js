@@ -25,7 +25,7 @@ exports.saveToDb = (req,res,next) => {
 exports.getFromDb = (req,res,next) => {
     Crypto.find().then(result => {
         res.json({
-            message: 'retrieved from db', 
+            message: 'retrieved from database', 
             crypto: result
         })
     })
